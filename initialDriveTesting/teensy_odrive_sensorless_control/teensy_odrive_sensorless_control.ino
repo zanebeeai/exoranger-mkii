@@ -87,12 +87,15 @@ void setup() {
     // Serial.println(odrv);
     delay(1000);
 
+    Serial.println("Staring to connect");
     // same numbers you used in python:
     odrv.print("r axis0.error\n");
+
+    Serial.println("Starting to spin forward");
     
-    spinSensorless(5.0f, 2.0f, 5.0f);
+    spinSensorless(1.0f, 2.0f, 5.0f);
     // delay(1000);
-    // spinSensorless(-0.25f, 1.0f, 5.0f);
+    spinSensorless(-0.25f, 1.0f, 5.0f);
 }
 
 void loop() {
