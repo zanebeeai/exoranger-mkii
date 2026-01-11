@@ -24,7 +24,6 @@ void sendCmd(const char *cmd) {
         Serial.write(odrv.read());
     }
 }
-
 void spinSensorless(float target_vel_turns_s,
                     float run_time_s,
                     float current_limit) {
